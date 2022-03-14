@@ -4,7 +4,7 @@ from [https://cjolowicz.github.io/posts/hypermodern-python-01-setup/](https://cj
 
 method: I am not following these lessons/plans exactly, but rather playing with the outline as I go along.  Will try to do this on Windows rather than WSL, may be a big mistake.
 
-### part 01
+### part 01 - pyenv, poetry, simple app
 
 Installed pyenv, not sure I like/need it with virtualenv.
 
@@ -36,7 +36,9 @@ Now, the script still doesn't work-- can't exec a file.  In the previous case as
 
 One of the problems here was that the hypermodern_tutorial module did not have an __init__ leading it to try to execute the module as an executable file, also mixing up '-' and '_'
 
-Learned some pdb on the way though.
+Learned some pdb on the way though.  Goodness, took a while for the first chapter, hopefully others run more smoothly.
+
+### part 02 - unit tests
 
 
 

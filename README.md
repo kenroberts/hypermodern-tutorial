@@ -23,6 +23,19 @@ PYENV=shim to choose python versions
 
 NOTES SO FAR: people seem to find these systems helpful-- I probably haven't gone far enough into them to recognize their usefulness, but so far, I find them awfully prescriptive, and rather than leaving global config alone, both poetry and pyenv operate as global shims.
 
+started with poetry, ran into issues:
+    C:\Users\kcr2\Desktop\hypermodern-tutorial>poetry run hypermodern-python
+    
+      ModuleOrPackageNotFound
+    
+      No file/folder found for package hypermodern-tutorial
+      
+Ok, I got an error, renamed the pyproject.toml [tool.poetry.scripts] target to match the name of the project, and then I get a different error, meaning that when using a src directory, even though I specify it directly, that is ignored, and it looks for a target related to the name.
+
+Now, the script still doesn't work-- can't exec a file.  In the previous case as well as the current one, the error messages I get are baroque.
+
+One of the problems here was that the hypermodern_tutorial module did not have an __init__
+
 
 
 

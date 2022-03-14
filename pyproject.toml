@@ -1,7 +1,6 @@
 [tool.poetry]
 name = "hypermodern-tutorial"
 version = "0.1.0"
-description = ""
 authors = ["Ken Roberts <kcr2@duke.edu>"]
 description = "The hypermodern Python project"
 license = "Apache"

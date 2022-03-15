@@ -41,11 +41,27 @@ Learned some pdb on the way though.  Goodness, took a while for the first chapte
 ### part 02 - unit tests
 
 went pretty well using pytest and pytest-cov
-now, asks to install Nox using pip, not poetry.  Why?  Because it will be used externally.
+now, asks to install Nox using pip, not poetry.  Why?  Because it will be used externally.  If following the tutorial, this will install into the base level venv created by pyenv.
 
 Got code coverage working with nox, but only on python 3.8.  Doesn't work great, pyenv-win does not seem to work well with venv.
 
       pyenv exec C:\Users\kcr2\AppData\Roaming\Python\Python38\Scripts\nox.exe
+
+### part 03 - linting, code formatting, static analysis
+
+flake8 linting turns up tons of bad-formatting, expect black to fix this.
+
+... and it did, except black was ok with an 81-char line, lint wasn't, and breaking the line caused black to put it back together.  Refactored into two shorter lines of code. 
+
+... and looking ahead, this error is anticipated.
+
+Using the safety module leads to another windows error that is not an error in Unix:
+      Whether the name can be used to open the file a second time, while the named temporary file is still open, varies across platforms (it can be so used on Unix; it cannot on Windows NT or later).
+
+
+
+
+
 
 
 

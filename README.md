@@ -40,8 +40,12 @@ Learned some pdb on the way though.  Goodness, took a while for the first chapte
 
 ### part 02 - unit tests
 
+went pretty well using pytest and pytest-cov
+now, asks to install Nox using pip, not poetry.  Why?  Because it will be used externally.
 
+Got code coverage working with nox, but only on python 3.8.  Doesn't work great, pyenv-win does not seem to work well with venv.
 
+      pyenv exec C:\Users\kcr2\AppData\Roaming\Python\Python38\Scripts\nox.exe
 
 
 
